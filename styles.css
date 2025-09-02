@@ -203,10 +203,14 @@ main {
   margin-bottom: 0;
 }
 .pergunta-texto {
-  display: none;
+  max-height: 30px;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
 }
 .mostrar-texto .pergunta-texto {
-  display: block;
+  max-height: 100px; 
+  opacity: 1;
 }
 .icone-menos {
   display: none;
